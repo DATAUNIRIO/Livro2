@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Estatística, Ciência de Dados e Sociedade</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+  <meta name="generator" content="bookdown 0.4.8 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Estatística, Ciência de Dados e Sociedade" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Estatística, Ciência de Dados e Sociedade" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Steven Dutt Ross &amp; Alexandre Silva">
+
+
+<meta name="date" content="2017-08-20">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="index.html">
+<link rel="next" href="intervalos-de-confianca.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introdução</a></li>
+<li class="chapter" data-level="2" data-path="inferencia-estatistica.html"><a href="inferencia-estatistica.html"><i class="fa fa-check"></i><b>2</b> Inferência Estatística</a><ul>
+<li class="chapter" data-level="2.1" data-path="inferencia-estatistica.html"><a href="inferencia-estatistica.html#distribuicoes-amostrais"><i class="fa fa-check"></i><b>2.1</b> Distribuições Amostrais</a></li>
+<li class="chapter" data-level="2.2" data-path="inferencia-estatistica.html"><a href="inferencia-estatistica.html#aplicacao-pratica"><i class="fa fa-check"></i><b>2.2</b> Aplicação prática</a></li>
+<li class="chapter" data-level="2.3" data-path="inferencia-estatistica.html"><a href="inferencia-estatistica.html#exercicio"><i class="fa fa-check"></i><b>2.3</b> Exercício</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="intervalos-de-confianca.html"><a href="intervalos-de-confianca.html"><i class="fa fa-check"></i><b>3</b> Intervalos de confiança</a></li>
+<li class="chapter" data-level="4" data-path="teste-de-hipoteses.html"><a href="teste-de-hipoteses.html"><i class="fa fa-check"></i><b>4</b> Teste de Hipóteses</a></li>
+<li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a><ul>
+<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
+<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="regressao-linear.html"><a href="regressao-linear.html"><i class="fa fa-check"></i><b>6</b> Regressão Linear</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Estatística, Ciência de Dados e Sociedade</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="inferencia-estatistica" class="section level1">
+<h1><span class="header-section-number">Capítulo 2</span> Inferência Estatística</h1>
+<p>Texto baseado no livro <em>A Estatística Básica e sua Prática</em> <span class="citation">David S. Moore (<a href="#ref-Moore">2011</a>)</span></p>
+<p>Ao extrair uma amostra, sabemos exatamente todas as respostas dos entrevistados. Entretanto, não queremos somente isso. Queremos também construir conclusões sobre a população. Em outras palavras, queremos <strong>generalizar os resultados da amostra para a população</strong>. O processo para isso é chamado inferência estatística. De fato, o nosso unico interesse em uma amostra aleatória é que ela forneça informação que possa ser generalizada para a população maior.</p>
+<p>A média da amostra <strong>não</strong> será exatamente igual à méda da população (evento muito raro. chance mínima disso acontecer). Se pudessemos extrair uma <strong>outra amostra da mesma população</strong>, os resultados dessa nova amostra poderia nos conduzir a conclusões diferentes. Como ter certeza que as conclusões baseadas em uma única amostra estão corretas? A inferencia estatística usa a linguagem da <strong>probabilidade</strong> para expressar o grau de confibilidade de nosas conclusões.</p>
+<p>Assim, esperamos que a amostra forneça alguma informação sobre a média populacional, embora saibamos que não será livre de erros. isso pode ser representado como uma equação:</p>
+<p><span class="math display">\[\bar{X}=\mu+\epsilon\]</span></p>
+<p>Onde <span class="math inline">\(\bar{X}\)</span> é a média amostral, <span class="math inline">\(\mu\)</span> (a letra grega <em>mi</em>) é a média populacional e <span class="math inline">\(\epsilon\)</span> é o erro amostral. Esse ultimo termo dfa equação pode assumir valores positivos e negativos (erro para mais ou para menos). O que essa equação está querendo dizer é:</p>
+<p>Estatística Amostral = Parametro Populacional + Erro Amostral</p>
+<p>As duas abordagens mais comuns da inferência estatística para isso são chamadas de:</p>
+<ol style="list-style-type: decimal">
+<li>Intervalos de confiança</li>
+<li>Teste de Hipóteses</li>
+</ol>
+<p>Ambos os tipos de inferência baseiam-se nas distribuições amostrais de estatísticas.</p>
+<div id="distribuicoes-amostrais" class="section level2">
+<h2><span class="header-section-number">2.1</span> Distribuições Amostrais</h2>
+<p>Suponha que na cidade do Rio de Janeiro só temos cinco empresas, isto é, uma população de 5 unidades. Vamos imaginar que os lucros dessas empresas foram de 8, 9, 10, 11 e 12 unidades monetárias. É facil verificar que o parâmetro da população da média é igual a 10 unidades. Vamos representar esse parâmetro por uma letra grega. Em outras palavras, vamos considerar <span class="math display">\[\mu=10\]</span>. Além disso, o desvio padrão desses valores é <span class="math display">\[ \sigma=1,41\]</span>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">empresa&lt;-<span class="kw">c</span>(<span class="dv">8</span>,<span class="dv">9</span>,<span class="dv">10</span>,<span class="dv">11</span>,<span class="dv">12</span>)
+<span class="kw">mean</span>(empresa)</code></pre></div>
+<pre><code>## [1] 10</code></pre>
+<p>Dessa população-alvo de 05 elementos, quero extrair todas as possíveis amostras de 03 elementos, com reposição, conforme mostrado na tabela ao lado.</p>
+<table>
+<caption><span id="tab:DA2">Tabela 2.1: </span>Amostras de tamanho 3 e Média dessas amostras</caption>
+<thead>
+<tr class="header">
+<th align="left">Amostra_Extraida_tamanho_3</th>
+<th align="right">Media_Amostra</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">8,8,8</td>
+<td align="right">8.00</td>
+</tr>
+<tr class="even">
+<td align="left">8,8,9</td>
+<td align="right">8.33</td>
+</tr>
+<tr class="odd">
+<td align="left">8,8,10</td>
+<td align="right">8.67</td>
+</tr>
+<tr class="even">
+<td align="left">8,8,11</td>
+<td align="right">9.00</td>
+</tr>
+<tr class="odd">
+<td align="left">8,8,12</td>
+<td align="right">9.33</td>
+</tr>
+<tr class="even">
+<td align="left">8,9,8</td>
+<td align="right">8.33</td>
+</tr>
+<tr class="odd">
+<td align="left">8,9,9</td>
+<td align="right">8.67</td>
+</tr>
+<tr class="even">
+<td align="left">8,9,10</td>
+<td align="right">9.00</td>
+</tr>
+<tr class="odd">
+<td align="left">8,9,11</td>
+<td align="right">9.33</td>
+</tr>
+<tr class="even">
+<td align="left">8,9,12</td>
+<td align="right">9.67</td>
+</tr>
+<tr class="odd">
+<td align="left">Etc</td>
+<td align="right">NA</td>
+</tr>
+</tbody>
+</table>
+<p>Nessa tabela extraimos (com reposição) todas as amostras possíveis. A primeira amostra foi aquela onde sorteamos o lucro. a segunda amostra foi 8,8,9. Na segunda coluna temos a média dessas amostras sorteadas.</p>
+<p>Interessante notar que a média da amostra igual a 8 é muito rara e só acontece uma unica vez. Isso só ocorre quando a amostra é igual a 8,8,8. Já a média da amostra igual a 8,33 ocorre em três situações:</p>
+<ol style="list-style-type: decimal">
+<li>8,8,9</li>
+<li>8,9,8</li>
+<li>9,8,8</li>
+</ol>
+<p>Após calculado o valor de média é possível agrupar de acordo com o número de vezes que esses valores aparecem.</p>
+<p>Nessas três situação a resultante será a média 8,33. Fazendo a frequência de todas as médias possíveis encontramos a seguinte tabela:</p>
+<table>
+<caption><span id="tab:DA3">Tabela 2.2: </span>Média da amostras e Frequência dessas médias</caption>
+<thead>
+<tr class="header">
+<th align="right">Media</th>
+<th align="right">Frequencia</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">8.00</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="right">8.33</td>
+<td align="right">3</td>
+</tr>
+<tr class="odd">
+<td align="right">8.67</td>
+<td align="right">6</td>
+</tr>
+<tr class="even">
+<td align="right">9.00</td>
+<td align="right">10</td>
+</tr>
+<tr class="odd">
+<td align="right">9.33</td>
+<td align="right">15</td>
+</tr>
+<tr class="even">
+<td align="right">9.67</td>
+<td align="right">18</td>
+</tr>
+<tr class="odd">
+<td align="right">10.00</td>
+<td align="right">19</td>
+</tr>
+<tr class="even">
+<td align="right">10.33</td>
+<td align="right">18</td>
+</tr>
+<tr class="odd">
+<td align="right">10.67</td>
+<td align="right">15</td>
+</tr>
+<tr class="even">
+<td align="right">11.00</td>
+<td align="right">10</td>
+</tr>
+<tr class="odd">
+<td align="right">11.33</td>
+<td align="right">6</td>
+</tr>
+<tr class="even">
+<td align="right">11.67</td>
+<td align="right">3</td>
+</tr>
+<tr class="odd">
+<td align="right">12.00</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
+<p>Podemos fazer um gráfico da frequência das médias amostrais.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">barplot</span>(Distribuicao<span class="op">$</span>Frequencia,<span class="dt">col=</span><span class="st">&quot;#175d5e&quot;</span>,<span class="dt">xlab=</span><span class="st">&quot;Médias das Amostras&quot;</span>,<span class="dt">ylim=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">20</span>))</code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:DA4"></span>
+<img src="bookdown-demo_files/figure-html/DA4-1.png" alt="Distribuição das médias das amostras de três elementos" width="80%" />
+<p class="caption">
+Figura 2.1: Distribuição das médias das amostras de três elementos
+</p>
+</div>
+<p>Esse gráfico é muito semelhante ao gráfico da distribuição normal. Tem um formato de sino, é simétrico, etc.</p>
+<p>Outro fato interessante é que a média das médias amostrais é igual a 10 (parâmetro da média da população).</p>
+<p>Além disso, supondo amostras com 03 elementos, com reposição. Será possível estabelecer 125 possíveis resultados. A média desses resultados será 10,00. O desvio padrão será 0,8185.</p>
+<p>Considerando a distribuição Normal, se temos a média e o desvio padrão, podemos utilizar a regra empírica 68%, 95%, 99,7% para calcular probabilidades do relacionamento entre a média da amostra e a média da população.</p>
+</div>
+<div id="aplicacao-pratica" class="section level2">
+<h2><span class="header-section-number">2.2</span> Aplicação prática</h2>
+<p>Vamos utilizar um exemplo real. No pacote chamado <em>TeachingSampling</em> tem uma base de dados com 2.396 linhas chamada <strong>Lucy</strong>. O que queremos é extrair amostras aleatórias desse banco de dados de diversos tamanhos e calcular o valor de <em>Income</em> (renda) médio.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(TeachingSampling)
+<span class="kw">data</span>(Lucy)
+<span class="kw">dim</span>(Lucy)</code></pre></div>
+<pre><code>## [1] 2396    8</code></pre>
+<p>Vamos extrair uma Amostra Aleatória Simples (AAS) desse banco de dados. A amostra que vamos extrair será de tamanho igual a 400.</p>
+<p>A função para fazer isso no R é <strong>S.WR(N,m)</strong>.Esse nome vem de: <strong>S</strong>ampling <strong>W</strong>ith <strong>R</strong>eplacement (<strong>N</strong>=Tamanho da população,<strong>m</strong>=Tamanho da Amostra)</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">N &lt;-<span class="st"> </span><span class="kw">dim</span>(Lucy)[<span class="dv">1</span>]
+m &lt;-<span class="st"> </span><span class="dv">400</span>
+sam&lt;-<span class="kw">S.WR</span>(N,m)
+data &lt;-<span class="st"> </span>Lucy[sam,]
+<span class="kw">dim</span>(data)</code></pre></div>
+<pre><code>## [1] 400   8</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mean</span>(Lucy<span class="op">$</span>Income)</code></pre></div>
+<pre><code>## [1] 432.0605</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mean</span>(data<span class="op">$</span>Income)</code></pre></div>
+<pre><code>## [1] 422.4025</code></pre>
+<p>A média da amostra não ficou próxima da média da população? E se extrairmos outra amostra? <em>Recomendo fortemente que você faça isso</em>. O valor da amostra fica algo entorno do verdadeiro valor da população, não? Isso porque os valores seguem uma distribuição Normal. O que quero dizer com isso? Que as amostras não são extraidas para acertar na mosca, mas sim para chegar bem perto do verdadeiro valor populacional. Podemos então pensar em um intervalo em 95% das vezes o verdadeiro valor estará incluido. Esse é o tema do proximo capítulo.</p>
+<p>Desse modo, podemos errar para mais ou para menos. A média da amostra poder ser um pouco maior ou um pouco menor qie a média da população. Se extrairmos muitas amostras, cad auma terá um média, mas espéramos que elas difiram umas das outras e da média populacional por chance aleatória.</p>
+</div>
+<div id="exercicio" class="section level2">
+<h2><span class="header-section-number">2.3</span> Exercício</h2>
+<ol style="list-style-type: decimal">
+<li>Gerar uma população de tamanho 100.000 com média igual a 100 e desvio padrão igual a 20</li>
+<li>Gerar uma amostra de tamanho 100</li>
+<li>Calcular a média da população</li>
+<li>Calcular a média da amostra</li>
+<li>Ver a diferença entre a média da amostra e a média da população</li>
+<li>repetir os passos 2 a 6 pelo menos cinco vezes</li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Definindo o tamanho da população e da amostra </span>
+N &lt;-<span class="st"> </span><span class="dv">100000</span>
+m &lt;-<span class="st"> </span><span class="dv">100</span>
+<span class="co"># Gerando uma conjunto de dados (Populacao)</span>
+Populacao&lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="kw">rnorm</span>(N, <span class="dv">100</span>, <span class="dv">20</span>))
+<span class="co"># Gerando uma amostra</span>
+sam&lt;-<span class="kw">S.WR</span>(N,m)
+amostra &lt;-<span class="st"> </span><span class="kw">data.frame</span>(Populacao[sam,])
+<span class="co"># Comparando a distribuicao da amostra com a da populacao</span>
+<span class="kw">summary</span>(amostra)</code></pre></div>
+<pre><code>##  Populacao.sam...
+##  Min.   : 45.06  
+##  1st Qu.: 85.48  
+##  Median : 98.12  
+##  Mean   : 99.86  
+##  3rd Qu.:111.23  
+##  Max.   :146.97</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span>(Populacao)</code></pre></div>
+<pre><code>##  rnorm.N..100..20.
+##  Min.   : 15.67   
+##  1st Qu.: 86.49   
+##  Median :100.00   
+##  Mean   :100.01   
+##  3rd Qu.:113.52   
+##  Max.   :188.01</code></pre>
+<p>Mais aplicações da relação da média da amostra com a média da população pode ser <a href="https://stevendutt.shinyapps.io/distamostral/">encontrada aqui</a></p>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Moore">
+<p>David S. Moore. 2011. <em>A Estatística Básica E Sua Prática</em>. Editora LTC. <a href=" "></a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="intervalos-de-confianca.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
